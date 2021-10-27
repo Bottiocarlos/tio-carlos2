@@ -1,1 +1,231 @@
-const _0x3f27ac=_0x3061;(function(_0x387f45,_0x2a8f00){const _0x1d2231=_0x3061,_0x5162be=_0x387f45();while(!![]){try{const _0x5585f6=parseInt(_0x1d2231(0xaa))/0x1+-parseInt(_0x1d2231(0xc1))/0x2+parseInt(_0x1d2231(0xae))/0x3+-parseInt(_0x1d2231(0xd6))/0x4+-parseInt(_0x1d2231(0xa3))/0x5*(parseInt(_0x1d2231(0xcb))/0x6)+-parseInt(_0x1d2231(0xbf))/0x7*(parseInt(_0x1d2231(0xa6))/0x8)+-parseInt(_0x1d2231(0xa2))/0x9*(-parseInt(_0x1d2231(0xb0))/0xa);if(_0x5585f6===_0x2a8f00)break;else _0x5162be['push'](_0x5162be['shift']());}catch(_0x3d718d){_0x5162be['push'](_0x5162be['shift']());}}}(_0x5872,0x40e05));function _0x3061(_0x44bc28,_0x2aff86){const _0x58721f=_0x5872();return _0x3061=function(_0x306100,_0x20272e){_0x306100=_0x306100-0x9c;let _0x16c73d=_0x58721f[_0x306100];return _0x16c73d;},_0x3061(_0x44bc28,_0x2aff86);}const Discord=require(_0x3f27ac(0xb5)),{prefijo,token}=require(_0x3f27ac(0xc5)),ytdl=require(_0x3f27ac(0xcf)),LibraryManager=require(_0x3f27ac(0xb9)),UserManager=require('./database/UserManager.js'),{forEach}=require(_0x3f27ac(0xd1)),client=new Discord[(_0x3f27ac(0xb4))](),libraryManager=new LibraryManager(),userManager=new UserManager(),queue=new Map();client[_0x3f27ac(0x9c)]('ready',()=>{const _0x2ed843=_0x3f27ac;console['log'](_0x2ed843(0xdc)+client['user'][_0x2ed843(0xa4)]+'\x0aEn\x20linea\x20nwn\x20✓');}),client[_0x3f27ac(0x9c)](_0x3f27ac(0xce),()=>{const _0x2b91b1=_0x3f27ac;console['log'](client[_0x2b91b1(0xbb)][_0x2b91b1(0xa4)]+'\x20reconectando...\x0au.u');}),client[_0x3f27ac(0x9c)](_0x3f27ac(0x9d),()=>{const _0x42cc70=_0x3f27ac;console[_0x42cc70(0x9e)](client[_0x42cc70(0xbb)][_0x42cc70(0xa4)]+_0x42cc70(0xc6));}),client['on']('message',async _0x184749=>{const _0x5e95de=_0x3f27ac;if(_0x184749[_0x5e95de(0xb8)][_0x5e95de(0xde)])return;let _0x897aaf=![];prefijo['forEach'](_0x5e97c3=>{if(_0x184749['content']['startsWith'](_0x5e97c3))_0x897aaf=_0x5e97c3;});if(!_0x897aaf)return;const _0x16ffc9=queue[_0x5e95de(0xa5)](_0x184749[_0x5e95de(0xbd)]['id']),arguments=_0x184749[_0x5e95de(0xb7)]['split']('\x20'),_0x59460d=arguments[0x0];switch(_0x59460d){case _0x897aaf+_0x5e95de(0xa1):execute(_0x184749,_0x16ffc9);break;case _0x897aaf+'skip':skip(_0x184749,_0x16ffc9);break;case _0x897aaf+_0x5e95de(0xa7):stop(_0x184749,_0x16ffc9);break;case _0x897aaf+_0x5e95de(0xc9):registerUser(_0x184749,_0x16ffc9);break;case _0x897aaf+'add':_0x184749,_0x16ffc9;break;default:_0x184749['channel'][_0x5e95de(0xda)](_0x5e95de(0xb2));}});async function execute(_0x51b15f,_0x51ff8f){const _0x2d65dc=_0x3f27ac,_0x355a14=_0x51b15f['content']['split']('\x20'),_0x1785cd=_0x51b15f['member'][_0x2d65dc(0xad)][_0x2d65dc(0xd4)];if(!_0x1785cd)return _0x51b15f[_0x2d65dc(0xd4)][_0x2d65dc(0xda)](_0x2d65dc(0xa8));const _0x2063ca=_0x1785cd['permissionsFor'](_0x51b15f['client'][_0x2d65dc(0xbb)]);if(!_0x2063ca['has'](_0x2d65dc(0xbe))||!_0x2063ca[_0x2d65dc(0xd9)]('SPEAK'))return _0x51b15f['channel'][_0x2d65dc(0xda)]('_**¡Necesito\x20los\x20permisos\x20para\x20unirme\x20y\x20hablar\x20en\x20su\x20canal\x20de\x20voz!**_');const _0x5382a6=[];if(_0x355a14[0x1]==_0x2d65dc(0xcc)){songsURL=libraryManager[_0x2d65dc(0xac)]();for(i=0x0;i<songsURL['length'];i++){let _0x53b11b=songsURL[i],_0x36dd7d=await ytdl[_0x2d65dc(0xaf)](_0x53b11b);_0x5382a6[_0x2d65dc(0xab)]({'title':_0x36dd7d[_0x2d65dc(0xb1)][_0x2d65dc(0xba)],'url':_0x36dd7d[_0x2d65dc(0xb1)]['video_url']});}}else{const _0x35fda1=await ytdl[_0x2d65dc(0xaf)](_0x355a14[0x1]);_0x5382a6[_0x2d65dc(0xab)]({'title':_0x35fda1[_0x2d65dc(0xb1)][_0x2d65dc(0xba)],'url':_0x35fda1[_0x2d65dc(0xb1)]['video_url']}),addToLibrary(_0x51b15f,_0x51ff8f);}if(!_0x51ff8f){const _0x1c097f={'textChannel':_0x51b15f[_0x2d65dc(0xd4)],'voiceChannel':_0x1785cd,'connection':null,'songs':[],'volume':0x5,'playing':!![]};queue[_0x2d65dc(0xc2)](_0x51b15f[_0x2d65dc(0xbd)]['id'],_0x1c097f),_0x5382a6['forEach'](_0x18e6ae=>{const _0x65e014=_0x2d65dc;_0x1c097f[_0x65e014(0xcc)][_0x65e014(0xab)](_0x18e6ae);});var _0x59b8c0=0x5;async function _0x1923d9(){const _0x3433d6=_0x2d65dc;try{var _0x2b82da=await _0x1785cd['join']();_0x1c097f[_0x3433d6(0xd7)]=_0x2b82da,play(_0x51b15f[_0x3433d6(0xbd)],_0x1c097f[_0x3433d6(0xcc)][0x0]);}catch(_0x2e5a67){_0x59b8c0--;if(_0x59b8c0>0x0)_0x1923d9();else return console[_0x3433d6(0x9e)](_0x2e5a67),queue[_0x3433d6(0xd5)](_0x51b15f[_0x3433d6(0xbd)]['id']),await _0x1785cd[_0x3433d6(0xc7)](),_0x51b15f[_0x3433d6(0xd4)][_0x3433d6(0xda)](_0x2e5a67);}}_0x1923d9();}else return _0x5382a6['forEach'](_0x3d3cd6=>_0x51ff8f[_0x2d65dc(0xcc)][_0x2d65dc(0xab)](_0x3d3cd6)),_0x51b15f['channel'][_0x2d65dc(0xda)](''+JSON['stringify'](_0x51ff8f[_0x2d65dc(0xcc)]));}function skip(_0x1d8233,_0x377e05){const _0x3ff914=_0x3f27ac;if(!_0x1d8233[_0x3ff914(0xd3)][_0x3ff914(0xad)]['channel'])return _0x1d8233[_0x3ff914(0xd4)]['send'](_0x3ff914(0xb6));if(!_0x377e05)return _0x1d8233[_0x3ff914(0xd4)]['send'](_0x3ff914(0xa9));_0x377e05[_0x3ff914(0xd7)][_0x3ff914(0x9f)]['end']();}async function addToLibrary(_0x5653fc,_0x55ac35){const _0x77474a=_0x3f27ac,_0x17982f=_0x5653fc[_0x77474a(0xb7)][_0x77474a(0xd2)]('\x20'),_0x13b777=await ytdl[_0x77474a(0xaf)](_0x17982f[0x1]);libraryManager['addToLibrary'](_0x5653fc[_0x77474a(0xb8)]['id'],_0x13b777[_0x77474a(0xb1)]['video_url']);}function writeIntoFile(_0x34c994,_0x1be3b6){const _0x39751b=require('fs');_0x39751b['writeFile'](_0x34c994,_0x1be3b6,_0xa1b4dc=>{const _0x4188cb=_0x3061;if(_0xa1b4dc){console[_0x4188cb(0xbc)](_0xa1b4dc);return;}});}function stop(_0x245f85,_0x423ba8){const _0x26598d=_0x3f27ac;if(!_0x245f85[_0x26598d(0xd3)][_0x26598d(0xad)][_0x26598d(0xd4)])return _0x245f85[_0x26598d(0xd4)]['send'](_0x26598d(0xb6));if(!_0x423ba8)return _0x245f85[_0x26598d(0xd4)][_0x26598d(0xda)](_0x26598d(0xc0));_0x423ba8[_0x26598d(0xcc)]=[],_0x423ba8[_0x26598d(0xd7)]['dispatcher'][_0x26598d(0xcd)]();}function _0x5872(){const _0x1514c0=['119688gwBjEh','stop','**¡Necesitas\x20estar\x20en\x20un\x20canal\x20de\x20voz\x20para\x20reproducir\x20música!**','_¡No\x20hay\x20canción\x20que\x20pueda\x20saltarme!_','63294CAOoHH','push','getAllSongs','voice','1194609tzqCyS','getInfo','1698130utMaHy','videoDetails','**[!]\x20Este\x20comando\x20no\x20existe\x20[!]**\x0a~~Debes\x20ingresar\x20un\x20comando\x20válido~~','url','Client','discord.js','**¡Tienes\x20que\x20estar\x20en\x20un\x20canal\x20de\x20voz\x20para\x20detener\x20la\x20música!**','content','author','./database/LibraryManager.js','title','user','error','guild','CONNECT','14mqOkYR','_¡No\x20hay\x20canción\x20que\x20pueda\x20detener!_','526058NoEMLI','set','registerNewUser','voiceChannel','./configuracion/config.json','\x0aDesconectado\x20unu','leave','finish','registro','shift','6zObjYD','songs','end','reconnecting','ytdl-core','highestaudio','async','split','member','channel','delete','1529608QAgJxx','connection','volume','has','send','setVolumeLogarithmic','Bot\x20','username','bot','once','disconnect','log','dispatcher','audioonly','play','45iyFWrU','1847380QrlmZT','tag','get'];_0x5872=function(){return _0x1514c0;};return _0x5872();}function play(_0x9e2e03,_0x1ac143){const _0x566a18=_0x3f27ac,_0x1da655=queue[_0x566a18(0xa5)](_0x9e2e03['id']);if(!_0x1ac143){_0x1da655[_0x566a18(0xc4)][_0x566a18(0xc7)](),queue[_0x566a18(0xd5)](_0x9e2e03['id']);return;}const _0x475771=_0x1da655['connection'][_0x566a18(0xa1)](ytdl(_0x1ac143[_0x566a18(0xb3)],{'filter':_0x566a18(0xa0),'quality':_0x566a18(0xd0),'highWaterMark':0x1<<0x19}),{'highWaterMark':0x1})['on'](_0x566a18(0xc8),()=>{const _0x1a4edc=_0x566a18;_0x1da655[_0x1a4edc(0xcc)][_0x1a4edc(0xca)](),play(_0x9e2e03,_0x1da655[_0x1a4edc(0xcc)][0x0]);})['on']('error',_0x45f39=>console[_0x566a18(0xbc)](_0x45f39));_0x475771[_0x566a18(0xdb)](_0x1da655[_0x566a18(0xd8)]/0x5),_0x1da655['textChannel'][_0x566a18(0xda)]('Empezar\x20a\x20reproducir:\x20**'+_0x1ac143[_0x566a18(0xba)]+'**');}function registerUser(_0x2126b6,_0x40021a){const _0x59f0ad=_0x3f27ac,_0x28e0db=_0x2126b6[_0x59f0ad(0xb7)][_0x59f0ad(0xd2)]('\x20');user=userManager[_0x59f0ad(0xc3)](_0x2126b6['author']['id'],_0x2126b6[_0x59f0ad(0xb8)][_0x59f0ad(0xdd)],_0x28e0db[0x1]);if(user)return _0x2126b6[_0x59f0ad(0xd4)][_0x59f0ad(0xda)]('_Usuario\x20'+_0x2126b6['author'][_0x59f0ad(0xdd)]+'\x20ha\x20sido\x20registrado_');}client['login'](token);
+const Discord = require("discord.js");
+const { prefijo, token } = require("./configuracion/config.json");
+const ytdl = require("ytdl-core");
+const LibraryManager = require("./database/LibraryManager.js");
+const UserManager = require("./database/UserManager.js");
+const { forEach } = require("async");
+//const {Player} = require('discord-player');
+//const Client = require('./client/Client');
+
+const client = new Discord.Client();
+const libraryManager = new LibraryManager();
+const userManager = new UserManager();
+//const player = new Player(client);
+
+const queue = new Map();
+
+/* player.on('error', (queue, error) => {
+  console.log(`[${queue.guild.name}] Error emitted from the queue: ${error.message}`);
+});
+
+player.on('connectionError', (queue, error) => {
+  console.log(`[${queue.guild.name}] Error emitted from the connection: ${error.message}`);
+});
+
+player.on('trackStart', (queue, track) => {
+  queue.metadata.send(`▶ | Started playing: **${track.title}** in **${queue.connection.channel.name}**!`);
+});
+
+player.on('trackAdd', (queue, track) => {
+  queue.metadata.send(`🎶 | Track **${track.title}** queued!`);
+});
+
+player.on('botDisconnect', queue => {
+  queue.metadata.send('❌ | I was manually disconnected from the voice channel, clearing queue!');
+});
+
+player.on('channelEmpty', queue => {
+  queue.metadata.send('❌ | Nobody is in the voice channel, leaving...');
+});
+
+player.on('queueEnd', queue => {
+  queue.metadata.send('✅ | Queue finished!');
+}); */
+
+client.once("ready", () => {
+  console.log(`Bot ${client.user.tag}\nEn linea nwn ✓`);
+});
+
+client.once("reconnecting", () => {
+  console.log(`${client.user.tag} reconectando...\nu.u`);
+});
+
+client.once("disconnect", () => {
+  console.log(`${client.user.tag}\nDesconectado unu`);
+});
+
+client.on("message", async message => {
+  if (message.author.bot) return;
+  let prefix=false;
+
+  prefijo.forEach((p) => {
+    if (message.content.startsWith(p)) prefix=p;
+  });
+  if(!prefix) return;
+
+  const serverQueue = queue.get(message.guild.id);
+  const arguments= message.content.split(" ")
+  const command =arguments[0];
+  switch (command) {
+    case `${prefix}play`:
+      execute(message, serverQueue);
+      break;
+    case `${prefix}skip`:
+      skip(message, serverQueue);
+      break;
+    case `${prefix}stop`:
+      stop(message, serverQueue);
+      break;
+    case `${prefix}registro`:
+      registerUser(message, serverQueue);
+      break;
+    case `${prefix}add`:
+      (message, serverQueue);
+      break;
+    default:
+      message.channel.send("**[!] Este comando no existe [!]**\n~~Debes ingresar un comando válido~~");
+  }
+});
+
+async function execute(message, serverQueue) {
+  const args = message.content.split(" ");
+
+  const voiceChannel = message.member.voice.channel;
+  if (!voiceChannel)
+    return message.channel.send(
+      "**¡Necesitas estar en un canal de voz para reproducir música!**"
+    );
+  const permissions = voiceChannel.permissionsFor(message.client.user);
+  if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+    return message.channel.send(
+      "_**¡Necesito los permisos para unirme y hablar en su canal de voz!**_"
+    );
+  }
+  const songs=[];
+  if(args[1]=="songs"){
+    songsURL = libraryManager.getAllSongs();
+    for (i=0;i<songsURL.length;i++){
+      let song = songsURL[i];
+      let songInfo = await ytdl.getInfo(song);
+      songs.push({
+            title: songInfo.videoDetails.title,
+            url: songInfo.videoDetails.video_url,
+           });
+     }
+  }
+  else{
+    // TO DO: ZAOBALIT do try, ked das zly argument tak padne
+    const songInfo = await ytdl.getInfo(args[1]);
+    songs.push({
+          title: songInfo.videoDetails.title,
+          url: songInfo.videoDetails.video_url,
+     })
+     addToLibrary(message, serverQueue)
+   }
+   if (!serverQueue) {
+    const queueContruct = {
+      textChannel: message.channel,
+      voiceChannel: voiceChannel,
+      connection: null,
+      songs: [],
+      volume: 5,
+      playing: true
+    };
+
+    queue.set(message.guild.id, queueContruct);
+    songs.forEach((song) => {
+      queueContruct.songs.push(song);
+    });
+    var counter=5;
+    async function startPlaing (){
+      try {
+        var connection = await voiceChannel.join();
+        queueContruct.connection = connection;
+        play(message.guild, queueContruct.songs[0]);
+      } catch (err) {
+        counter--;
+        if(counter>0) startPlaing()
+        else {
+          console.log(err);
+          queue.delete(message.guild.id);
+          await voiceChannel.leave();
+          return message.channel.send(err);
+        }
+      }
+    }
+    startPlaing();
+  } 
+  else {
+    songs.forEach(song => serverQueue.songs.push(song))
+  /*   serverQueue.songs.concat(songs); */
+    return message.channel.send(`${JSON.stringify(serverQueue.songs)}`);
+  }
+}
+
+function skip(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "**¡Tienes que estar en un canal de voz para detener la música!**"
+    );
+  if (!serverQueue)
+    return message.channel.send("_¡No hay canción que pueda saltarme!_");
+  serverQueue.connection.dispatcher.end();
+}
+
+async function addToLibrary(message, serverQueue) {
+  const args = message.content.split(" ")
+  const songInfo = await ytdl.getInfo(args[1])
+  libraryManager.addToLibrary(message.author.id,songInfo.videoDetails.video_url)
+}
+
+function writeIntoFile(file,string) {
+  const fs = require('fs');
+  fs.writeFile(file, string, err => {
+    if (err) {
+      console.error(err)
+      return
+    }
+})
+}
+
+function stop(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "**¡Tienes que estar en un canal de voz para detener la música!**"
+    );
+
+  if (!serverQueue)
+    return message.channel.send("_¡No hay canción que pueda detener!_");
+
+  serverQueue.songs = [];
+  serverQueue.connection.dispatcher.end();
+}
+
+function play(guild, song) {
+  const serverQueue = queue.get(guild.id);
+  if (!song) {
+    serverQueue.voiceChannel.leave();
+    queue.delete(guild.id);
+    return;
+  }
+
+  const dispatcher = serverQueue.connection
+    .play(ytdl(song.url,{filter: 'audioonly', quality: 'highestaudio', highWaterMark: 1<<25 }), {highWaterMark: 1})
+    .on("finish", () => {
+      serverQueue.songs.shift();
+      play(guild, serverQueue.songs[0]);
+    })
+    .on("error", error => console.error(error));
+  dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
+  serverQueue.textChannel.send(`Empezar a reproducir: **${song.title}**`);
+}
+
+function registerUser(message, serverQueue) {
+  const args = message.content.split(" ");
+  user=userManager.registerNewUser(message.author.id, message.author.username,args[1])
+  if (user) {
+    return message.channel.send(`_Usuario ${message.author.username} ha sido registrado_`);
+  }
+}
+
+client.login(token);
