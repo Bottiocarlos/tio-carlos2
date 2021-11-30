@@ -1,1 +1,1 @@
-# Simple Bot Discord Termux-BETA
+# Bot 24/7
