@@ -8,5 +8,7 @@
 	"NombreBot": "NK-BOT",
 	"LimiteEnGrupos": "2",
 	"LimiteComandos": "666999",
-	"TusRedesSociales": "~>[TuCanalDeYoutube]\n~>[PaginaDeFacebook]\n~>[TusOtrasRedesSociales...]"
+	"TusRedesSociales": "~>[TuCanalDeYoutube]\n~>[PaginaDeFacebook]\n~>[TusOtrasRedesSociales...]",
+	"ApiZeks": "TeslaZeks",
+	"ApiLoL": "BudaApi"
 }

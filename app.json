@@ -1,6 +1,6 @@
 {
-  "name": "simple-whatsapp-bot",
-  "description": "simple whatsapp bot nodejs",
+  "name": "whatsapp-bot",
+  "description": "whatsapp bot build with nodejs",
   "repository": "https://github.com/NeKosmic/Nk-Tesla",
   "logo": "https://i.ibb.co/VjF33JW/images-8.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"],
