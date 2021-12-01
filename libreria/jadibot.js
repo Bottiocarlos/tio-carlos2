@@ -1,1 +1,185 @@
-var _0x65979e=_0x22b6;(function(_0x589cb6,_0x1a2abf){var _0x53e559=_0x22b6,_0x5b03cb=_0x589cb6();while(!![]){try{var _0x1f5ccc=parseInt(_0x53e559(0xdd))/0x1+-parseInt(_0x53e559(0xab))/0x2*(parseInt(_0x53e559(0xcf))/0x3)+-parseInt(_0x53e559(0xf4))/0x4+-parseInt(_0x53e559(0xf2))/0x5+-parseInt(_0x53e559(0xe8))/0x6+parseInt(_0x53e559(0xec))/0x7*(parseInt(_0x53e559(0xe1))/0x8)+-parseInt(_0x53e559(0xc6))/0x9*(-parseInt(_0x53e559(0xdc))/0xa);if(_0x1f5ccc===_0x1a2abf)break;else _0x5b03cb['push'](_0x5b03cb['shift']());}catch(_0x133864){_0x5b03cb['push'](_0x5b03cb['shift']());}}}(_0x25a0,0x476a7));let {WAConnection,MessageType,Mimetype}=require('@adiwajshing/baileys'),qrcode=require(_0x65979e(0xf0));const fs=require('fs');var date=new Date(),tahun=date['getFullYear'](),bulan=date[_0x65979e(0xf5)](),MEZ=date[_0x65979e(0xf5)](),tanggal=date[_0x65979e(0xca)](),hari=date['getDay'](),jams=date[_0x65979e(0xd8)](),menit=date[_0x65979e(0xb4)](),detik=date[_0x65979e(0xbf)](),horas1=date['getHours'](),minutos1=date[_0x65979e(0xb4)](),segundos1=date[_0x65979e(0xbf)]();function _0x22b6(_0x49582c,_0x5d9642){var _0x25a0ad=_0x25a0();return _0x22b6=function(_0x22b691,_0x485d2b){_0x22b691=_0x22b691-0xa2;var _0x3bd951=_0x25a0ad[_0x22b691];return _0x3bd951;},_0x22b6(_0x49582c,_0x5d9642);}switch(hari){case 0x0:hari=_0x65979e(0xe2);break;case 0x1:hari=_0x65979e(0xba);break;case 0x2:hari='Martes';break;case 0x3:hari=_0x65979e(0xb6);break;case 0x4:hari=_0x65979e(0xc4);break;case 0x5:hari=_0x65979e(0xe6);break;case 0x6:hari=_0x65979e(0xb7);break;}function _0x25a0(){var _0x3ce25b=['open','deleteMessage','getMinutes','@g.us','Miercoles','Sabado','Buena\x20Madrugada\x20','*[\x20Escanee\x20el\x20codigo\x20QR\x20para\x20que\x20te\x20vuelvas\x20bot\x20]*\x0a*NOTA:*\x0a_Cada\x20codigo\x20QR\x20tiene\x20un\x20tiempo\x20valido\x20de\x2020\x20segundos!!!_','Lunes','group-participants-update','De\x20Septiembre\x20Del','EsclaBot-NK','De\x20Abril\x20Del','getSeconds','De\x20Noviembre\x20Del','\x20:\x20','connect','Buenos\x20Dias!!!\x20','Jueves','sendMessage','27dLMTSg','⚡\x20*','version','from','getDate','desc','participants','level','user','1525749XHQcJJ','De\x20Junio\x20Del','Buenas\x20Noches\x20','jid','@c.us','close','*\x0a⚡\x20_Espero\x20y\x20te\x20agrade\x20tu\x20estancia\x20aqui,\x20no\x20olvides\x20respetar\x20a\x20los\x20participantes\x20y\x20las\x20reglas\x20;)_\x0a\x0a*[\x20!\x20]\x20Reglas\x20Del\x20Grupo:*\x0a','De\x20Mayo\x20Del','image','getHours','remove','Que\x20tengas\x20un\x20excelente\x20dia\x20','log','5011270WBYcYp','174862VAjBMP','action','../nkbot.js','subject','22664dQRfAq','Domingo','\x20fue\x20ascendido\x20a\x20admin*\x20✓','promote','https://i.ibb.co/q70WmhZ/Sin-Perfil-F.jpg','Viernes','red','2511558FynCPh','De\x20Febrero\x20Del','3.0','*[\x20Un\x20usuario\x20se\x20convirtio\x20en\x20bot\x20exitosamente\x20]*✓\x0a\x0a*Dispositivo*:\x0a\x0a\x20','497kucHuZ','Error\x20:\x20%s','logger','getProfilePicture','qrcode','data:image/png;base64,','1852395EtydxG','browserDescription','1156848SAsDfk','getMonth','push','Buenas\x20Tardes\x20','demote','toDataURL',',\x20Bienvenid@\x20a\x20este\x20grandioso\x20grupo\x20:\x20','split','endsWith','De\x20Enero\x20Del','Se\x20detuvo\x20el\x20multibot\x20con\x20exito\x20✓','warn','2vyygrZ','Buenos\x20Dias\x20','*Adiuuu*\x20@','De\x20Julio\x20Del','De\x20Octubre\x20Del','Buen\x20dia\x20','De\x20Diciembre\x20Del'];_0x25a0=function(){return _0x3ce25b;};return _0x25a0();}switch(bulan){case 0x0:bulan=_0x65979e(0xa8);break;case 0x1:bulan=_0x65979e(0xe9);break;case 0x2:bulan='De\x20Marzo\x20Del';break;case 0x3:bulan=_0x65979e(0xbe);break;case 0x4:bulan=_0x65979e(0xd6);break;case 0x5:bulan=_0x65979e(0xd0);break;case 0x6:bulan=_0x65979e(0xae);break;case 0x7:bulan='De\x20Agosto\x20Del';break;case 0x8:bulan=_0x65979e(0xbc);break;case 0x9:bulan=_0x65979e(0xaf);break;case 0xa:bulan=_0x65979e(0xc0);break;case 0xb:bulan=_0x65979e(0xb1);break;}switch(MEZ){case 0x0:MEZ='0';break;case 0x1:MEZ='1';break;case 0x2:MEZ='2';break;case 0x3:MEZ='3';break;case 0x4:MEZ='4';break;case 0x5:MEZ='5';break;case 0x6:MEZ='6';break;case 0x7:MEZ='7';break;case 0x8:MEZ='8';break;case 0x9:MEZ='9';break;case 0xa:MEZ='10';break;case 0xb:MEZ='11';break;}switch(jams){case 0x0:jams=_0x65979e(0xb8);break;case 0x1:jams=_0x65979e(0xb8);break;case 0x2:jams=_0x65979e(0xb8);break;case 0x3:jams=_0x65979e(0xac);break;case 0x4:jams=_0x65979e(0xac);break;case 0x5:jams=_0x65979e(0xac);break;case 0x6:jams=_0x65979e(0xc3);break;case 0x7:jams=_0x65979e(0xda);break;case 0x8:jams='Que\x20tengas\x20un\x20excelente\x20dia\x20';break;case 0x9:jams='Que\x20tengas\x20un\x20excelente\x20dia\x20';break;case 0xa:jams=_0x65979e(0xda);break;case 0xb:jams=_0x65979e(0xb0);break;case 0xc:jams='Buen\x20dia\x20';break;case 0xd:jams=_0x65979e(0xb0);break;case 0xe:jams='Buenas\x20Tardes\x20';break;case 0xf:jams=_0x65979e(0xa2);break;case 0x10:jams='Buenas\x20Tardes\x20';break;case 0x11:jams='Buenas\x20Tardes\x20';break;case 0x12:jams=_0x65979e(0xa2);break;case 0x13:jams=_0x65979e(0xa2);break;case 0x14:jams=_0x65979e(0xd1);break;case 0x15:jams=_0x65979e(0xd1);break;case 0x16:jams='Buenas\x20Noches\x20';break;case 0x17:jams='Buenas\x20Noches\x20';break;}var tampilTanggal=hari+'\x20'+tanggal+'\x20'+bulan+'\x20'+tahun,tampilWaktu2=horas1+_0x65979e(0xc1)+minutos1+'\x20:\x20'+segundos1,tampilWaktuwu=jams,fechaAC=tanggal+'/'+MEZ+'/'+tahun;listjadibot=[];const jadibot=async(_0xe1f01,_0x370bab,_0x506e54)=>{var _0x4b2922=_0x65979e;uwur=new WAConnection(),uwur[_0x4b2922(0xee)][_0x4b2922(0xcd)]=_0x4b2922(0xaa),uwur[_0x4b2922(0xc8)]=[0x2,0x85c,0xe],uwur[_0x4b2922(0xf3)]=[_0x4b2922(0xbd),'',_0x4b2922(0xea)],uwur['on']('qr',async _0x39befa=>{var _0x5ca45f=_0x4b2922;let _0x59924d=await qrcode[_0x5ca45f(0xa4)](_0x39befa,{'scale':0x8}),_0x517d8f=new Buffer[(_0x5ca45f(0xc9))](_0x59924d['replace'](_0x5ca45f(0xf1),''),'base64');_0x59924d=await _0x370bab[_0x5ca45f(0xc5)](_0x506e54,_0x517d8f,MessageType[_0x5ca45f(0xd7)],{'caption':_0x5ca45f(0xb9)}),setTimeout(()=>{var _0x149dc3=_0x5ca45f;_0x370bab[_0x149dc3(0xb3)](_0x506e54,_0x59924d['key']);},0x4650);}),uwur['on']('connecting',()=>{}),uwur['on'](_0x4b2922(0xb2),()=>{var _0x1caa82=_0x4b2922;_0xe1f01(_0x1caa82(0xeb)+JSON['stringify'](uwur[_0x1caa82(0xce)],null,0x2));}),await uwur[_0x4b2922(0xc2)]({'timeoutMs':0x1e*0x3e8}),listjadibot[_0x4b2922(0xf6)](uwur[_0x4b2922(0xce)]),uwur['on'](_0x4b2922(0xbb),async _0x3fbdcb=>{var _0x4de70f=_0x4b2922;try{const _0x4a03aa=await uwur['groupMetadata'](_0x3fbdcb[_0x4de70f(0xd2)]),_0x5a24cd=_0x3fbdcb['jid'][_0x4de70f(0xa7)](_0x4de70f(0xb5)),_0x12f481=_0x5a24cd?_0x4a03aa[_0x4de70f(0xcb)]:'';console[_0x4de70f(0xdb)](_0x3fbdcb);if(_0x3fbdcb[_0x4de70f(0xde)]=='add'){num=_0x3fbdcb[_0x4de70f(0xcc)][0x0];try{ppimg=await uwur['getProfilePicture'](_0x3fbdcb[_0x4de70f(0xcc)][0x0]['split']('@')[0x0]+_0x4de70f(0xd3));}catch{ppimg=_0x4de70f(0xe5);}teks=_0x4de70f(0xc7)+tampilWaktuwu+'\x20@'+num[_0x4de70f(0xa6)]('@')[0x0]+_0x4de70f(0xa5)+_0x4a03aa[_0x4de70f(0xe0)]+_0x4de70f(0xd5)+_0x12f481;let _0x50de00=await getBuffer(ppimg);uwur[_0x4de70f(0xc5)](_0x4a03aa['id'],_0x50de00,MessageType[_0x4de70f(0xd7)],{'caption':teks,'contextInfo':{'mentionedJid':[num]}});}else{if(_0x3fbdcb['action']==_0x4de70f(0xd9)){num=_0x3fbdcb['participants'][0x0];try{ppimg=await uwur[_0x4de70f(0xef)](num['split']('@')[0x0]+_0x4de70f(0xd3));}catch{ppimg=_0x4de70f(0xe5);}teks=_0x4de70f(0xad)+num['split']('@')[0x0];let _0x1cc918=await getBuffer(ppimg);uwur[_0x4de70f(0xc5)](_0x4a03aa['id'],_0x1cc918,MessageType['image'],{'caption':teks,'contextInfo':{'mentionedJid':[num]}});}else{if(_0x3fbdcb[_0x4de70f(0xde)]==_0x4de70f(0xe4)){num=_0x3fbdcb[_0x4de70f(0xcc)][0x0];try{ppimg=await uwur[_0x4de70f(0xef)](_0x3fbdcb[_0x4de70f(0xcc)][0x0][_0x4de70f(0xa6)]('@')[0x0]+_0x4de70f(0xd3));}catch{ppimg=_0x4de70f(0xe5);}teks='*@'+num[_0x4de70f(0xa6)]('@')[0x0]+_0x4de70f(0xe3);let _0x546f57=await getBuffer(ppimg);uwur[_0x4de70f(0xc5)](_0x4a03aa['id'],_0x546f57,MessageType[_0x4de70f(0xd7)],{'caption':teks,'contextInfo':{'mentionedJid':[num]}});}else{if(_0x3fbdcb[_0x4de70f(0xde)]==_0x4de70f(0xa3)){num=_0x3fbdcb[_0x4de70f(0xcc)][0x0];try{ppimg=await uwur[_0x4de70f(0xef)](_0x3fbdcb[_0x4de70f(0xcc)][0x0][_0x4de70f(0xa6)]('@')[0x0]+_0x4de70f(0xd3));}catch{ppimg=_0x4de70f(0xe5);}teks='@'+num[_0x4de70f(0xa6)]('@')[0x0]+'\x20fue\x20degradado\x20de\x20ser\x20admin\x20✓';let _0x1e7d2d=await getBuffer(ppimg);uwur[_0x4de70f(0xc5)](_0x4a03aa['id'],_0x1e7d2d,MessageType[_0x4de70f(0xd7)],{'caption':teks,'contextInfo':{'mentionedJid':[num]}});}}}}}catch(_0x56984f){console['log'](_0x4de70f(0xed),color(_0x56984f,_0x4de70f(0xe7)));}}),uwur['on']('chat-update',async _0x3c528b=>{var _0xfe1c54=_0x4b2922;require(_0xfe1c54(0xdf))(uwur,_0x3c528b);});},stopjadibot=_0x5d76a8=>{var _0x34681f=_0x65979e;uwur=new WAConnection(),uwur[_0x34681f(0xd4)](),_0x5d76a8(_0x34681f(0xa9));};module['exports']={'jadibot':jadibot,'stopjadibot':stopjadibot,'listjadibot':listjadibot};
+
+let { WAConnection, MessageType, Mimetype} = require('@adiwajshing/baileys')
+let qrcode = require('qrcode')
+const fs = require('fs')
+/**FECHA DET**/
+var date = new Date();
+
+var tahun = date.getFullYear();
+
+var bulan = date.getMonth();
+var MEZ = date.getMonth();
+var tanggal = date.getDate();
+var hari = date.getDay();
+
+var jams = date.getHours();
+var menit = date.getMinutes();
+var detik = date.getSeconds();
+
+var horas1 = date.getHours();
+var minutos1 = date.getMinutes();
+var segundos1 = date.getSeconds();
+
+switch(hari) {
+ case 0: hari = "Domingo"; break;
+ case 1: hari = "Lunes"; break;
+ case 2: hari = "Martes"; break;
+ case 3: hari = "Miercoles"; break;
+ case 4: hari = "Jueves"; break;
+ case 5: hari = "Viernes"; break;
+ case 6: hari = "Sabado"; break;
+}
+switch(bulan) {
+ case 0: bulan = "De Enero Del"; break;
+ case 1: bulan = "De Febrero Del"; break;
+ case 2: bulan = "De Marzo Del"; break;
+ case 3: bulan = "De Abril Del"; break;
+ case 4: bulan = "De Mayo Del"; break;
+ case 5: bulan = "De Junio Del"; break;
+ case 6: bulan = "De Julio Del"; break;
+ case 7: bulan = "De Agosto Del"; break;
+ case 8: bulan = "De Septiembre Del"; break;
+ case 9: bulan = "De Octubre Del"; break;
+ case 10: bulan = "De Noviembre Del"; break;
+ case 11: bulan = "De Diciembre Del"; break;
+}
+switch(MEZ) {
+ case 0: MEZ = "0"; break;
+ case 1: MEZ = "1"; break;
+ case 2: MEZ = "2"; break;
+ case 3: MEZ = "3"; break;
+ case 4: MEZ = "4"; break;
+ case 5: MEZ = "5"; break;
+ case 6: MEZ = "6"; break;
+ case 7: MEZ = "7"; break;
+ case 8: MEZ = "8"; break;
+ case 9: MEZ = "9"; break;
+ case 10: MEZ = "10"; break;
+ case 11: MEZ = "11"; break;
+}
+switch(jams){
+case 0: jams = "Buena Madrugada "; break;
+case 1: jams = "Buena Madrugada "; break;
+case 2: jams = "Buena Madrugada "; break;
+case 3: jams = "Buenos Dias "; break;
+case 4: jams = "Buenos Dias "; break;
+case 5: jams = "Buenos Dias "; break;
+case 6: jams = "Buenos Dias!!! "; break;
+case 7: jams = "Que tengas un excelente dia "; break;
+case 8: jams = "Que tengas un excelente dia "; break;
+case 9: jams = "Que tengas un excelente dia "; break;
+case 10: jams = "Que tengas un excelente dia "; break;
+case 11: jams = "Buen dia "; break;
+case 12: jams = "Buen dia "; break;
+case 13: jams = "Buen dia "; break;
+case 14: jams = "Buenas Tardes "; break;
+case 15: jams = "Buenas Tardes "; break;
+case 16: jams = "Buenas Tardes "; break;
+case 17: jams = "Buenas Tardes "; break;
+case 18: jams = "Buenas Tardes "; break;
+case 19: jams = "Buenas Tardes "; break;
+case 20: jams = "Buenas Noches "; break;
+case 21: jams = "Buenas Noches "; break;
+case 22: jams = "Buenas Noches "; break;
+case 23: jams = "Buenas Noches "; break;
+            }
+            
+var tampilTanggal = hari + " "+ tanggal + " " + bulan + " " + tahun;
+var tampilWaktu2 = horas1 + " : " + minutos1 + " : " + segundos1;
+var tampilWaktuwu = jams;
+var fechaAC = tanggal + "/"+ MEZ + "/" + tahun;
+
+listjadibot = [];
+
+const jadibot = async(reply,client,id) => {
+	teslagod = new WAConnection()
+    teslagod.logger.level = 'warn'
+    teslagod.version = [2, 2140, 14]
+    teslagod.browserDescription = [ 'EsclaBot-NK', '', '3.0' ]
+    teslagod.on('qr', async qr => {
+    	let bot = await qrcode.toDataURL(qr, { scale: 8 })
+    	let buffer = new Buffer.from(bot.replace('data:image/png;base64,', ''), 'base64')
+       	bot = await client.sendMessage(id,buffer,MessageType.image,{caption:'*[ Escanee el codigo QR para que te vuelvas bot ]*\n*NOTA:*\n_Cada codigo QR tiene un tiempo valido de 20 segundos!!!_'})
+    	setTimeout(() => {
+       	client.deleteMessage(id, bot.key)
+       },18000)
+    })
+    teslagod.on('connecting', () => {
+    })
+    teslagod.on('open', () => {
+    	reply(`*[ Un usuario se convirtio en bot exitosamente ]*✓\n\n*Dispositivo*:\n\n ${JSON.stringify(teslagod.user,null,2)}`)
+    })
+    await teslagod.connect({timeoutMs: 30 * 1000})
+    listjadibot.push(teslagod.user)
+//=====================UwU========================//
+teslagod.on('group-participants-update', async (anu) => {
+		try {
+			const mdata = await teslagod.groupMetadata(anu.jid)
+			const isGroup3 = anu.jid.endsWith('@g.us')
+            const groupDesc2 = isGroup3 ? mdata.desc : ''
+			console.log(anu)
+			if (anu.action == 'add') {
+				num = anu.participants[0]
+				try {
+					ppimg = await teslagod.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+				} catch {
+					ppimg = 'https://i.ibb.co/q70WmhZ/Sin-Perfil-F.jpg'
+				}
+				teks = `⚡ *${tampilWaktuwu} @${num.split('@')[0]}, Bienvenid@ a este grandioso grupo : ${mdata.subject}*\n⚡ _Espero y te agrade tu estancia aqui, no olvides respetar a los participantes y las reglas ;)_\n\n*[ ! ] Reglas Del Grupo:*\n${groupDesc2}`
+
+				let buff = await getBuffer(ppimg)
+				teslagod.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+				} else if (anu.action == 'remove') {
+				num = anu.participants[0]
+				try {
+					ppimg = await teslagod.getProfilePicture(`${num.split('@')[0]}@c.us`)
+				} catch {
+					ppimg = 'https://i.ibb.co/q70WmhZ/Sin-Perfil-F.jpg'
+				}
+					teks = `*Adiuuu* @${num.split('@')[0]}`
+				let buff = await getBuffer(ppimg)
+				teslagod.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+				
+		} else if (anu.action == 'promote') {
+				num = anu.participants[0]
+				try {
+					ppimg = await teslagod.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+				} catch {
+					ppimg = 'https://i.ibb.co/q70WmhZ/Sin-Perfil-F.jpg'
+				}
+				teks = `*@${num.split('@')[0]} fue ascendido a admin* ✓`///Texto si un usuario es convertido a administrador en un grupo
+				let buff = await getBuffer(ppimg)
+				teslagod.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+				} else if (anu.action == 'demote') {
+				num = anu.participants[0]
+				try {
+					ppimg = await teslagod.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+				} catch {
+					ppimg = 'https://i.ibb.co/q70WmhZ/Sin-Perfil-F.jpg'
+				}
+				teks = `@${num.split('@')[0]} fue degradado de ser admin ✓` ///texto si un usuario pierde su administración
+				let buff = await getBuffer(ppimg)
+				teslagod.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+			}
+		} catch (e) {
+			console.log('Error : %s', color(e, 'red'))
+		}
+	}
+)
+//=====================UwU========================//
+    teslagod.on('chat-update', async (message) => {
+        require('../index.js')(teslagod, message)
+    })
+}
+
+const stopjadibot = (reply) => {
+	teslagod = new WAConnection();
+	teslagod.close()
+	reply('Se detuvo el multibot con exito ✓')
+}
+
+module.exports = {
+	jadibot,
+	stopjadibot,
+	listjadibot
+}
