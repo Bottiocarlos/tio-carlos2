@@ -48,8 +48,8 @@
     "yt-search": "^2.7.6"
   },
   "scripts": {
-    "start": "node teslagod",
-    "test": "supervisor teslagod"
+    "start": "node main",
+    "test": "supervisor main"
   },
   "repository": {
     "type": "git",
