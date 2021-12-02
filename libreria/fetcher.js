@@ -67,7 +67,7 @@ exports.kyun = (seconds) =>{
     var seconds = Math.floor(seconds % 60);
 
     //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-    return `${pad(hours)}Jam - ${pad(minutes)}Menit -  ${pad(seconds)}Detik `
+    return `${pad(hours)}Horas - ${pad(minutes)}Minutos -  ${pad(seconds)}Segundos `
 }
 exports.createExif = (pack, auth) =>{
     const code = [0x00,0x00,0x16,0x00,0x00,0x00]
