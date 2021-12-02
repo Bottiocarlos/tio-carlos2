@@ -1,8 +1,8 @@
 {
   "name": "NK-BOT",
-  "version": "5.0.0",
+  "version": "5.0.5",
   "description": "Sexy El Que Lo Lea 7w7 ",
-  "main": "main.js",
+  "main": "teslagod.js",
   "directories": {
     "lib": "libreria"
   },
@@ -48,8 +48,8 @@
     "yt-search": "^2.7.6"
   },
   "scripts": {
-    "start": "node main",
-    "test": "supervisor main"
+    "start": "node teslagod",
+    "test": "supervisor teslagod"
   },
   "repository": {
     "type": "git",
