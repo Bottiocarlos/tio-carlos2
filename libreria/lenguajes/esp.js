@@ -111,6 +111,8 @@ exports.panel = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol,
 *╔═══════════*
 *║ _OTROS CMDS :_*
 *║╭—————————*
+*║├${prefix}nuebot*
+*║├${prefix}listnuebot*
 *║├${prefix}gruposwa*
 *║├${prefix}minivel*
 *║├${prefix}tienda*
@@ -253,6 +255,8 @@ exports.panel2 = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol
 *╔═══════════════*
 *║ _OTROS CMDS :_*
 *║╭————————————*
+*║├${prefix}nuebot* _[para convertirse en bot]_
+*║├${prefix}listnuebot* _[lista de números bot]_
 *║├${prefix}gruposwa* _[grupos de WhatsApp]_
 *║├${prefix}minivel* _[ver tu nivel actual]_
 *║├${prefix}tienda* _[genera una tienda falsa]_
