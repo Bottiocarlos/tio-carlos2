@@ -51,6 +51,7 @@ exports.panel = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol,
 *║├${prefix}invocar4*
 *║├${prefix}ascender*
 *║├${prefix}degradar*
+*║├${prefix}nivelear*
 *║├${prefix}banchat*
 *║├${prefix}antilink*
 *║├${prefix}antilink2*
@@ -194,6 +195,7 @@ exports.panel2 = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol
 *║├${prefix}invocar4* _[etiqueta a todos]_
 *║├${prefix}ascender* _[convertir a administrador]_
 *║├${prefix}degradar* _[quitar administracion]_
+*║├${prefix}nivelear* _[activar niveles]_
 *║├${prefix}banchat* _[banear un chat]_
 *║├${prefix}antilink* _[anti-link normal]_
 *║├${prefix}antilink2* _[anti-link multiple]_
