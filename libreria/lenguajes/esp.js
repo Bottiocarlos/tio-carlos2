@@ -226,6 +226,8 @@ exports.panel2 = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol
 *║├${prefix}quitarbaneo* _[quitar baneo]_
 *║||| ~MODO KUAKER~ |||*
 *║[ ! ] Simples traba grupo nwn [ ! ]*
+*║ ~PSDT- Estos comandos son de virustraba~*
+*║ ~ten cuidado al usarlos~*
 *║├${prefix}c1* _[grupo crash 1]_
 *║├${prefix}c2* _[grupo crash 2]_
 *║├${prefix}c3* _[grupo crash 3]_
