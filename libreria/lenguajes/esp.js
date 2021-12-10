@@ -522,6 +522,7 @@ exports.mascomandos = (prefix) => {
 ║➩ ❍ ${prefix}play
 ║➩ ❍ ${prefix}play2
 ║➩ ❍ ${prefix}youtube
+║➩ ❍ ${prefix}playvid
 ║➩ ❍ ${prefix}letra
 ║➩ ❍ ${prefix}randimg
 ║➩ ❍ ${prefix}djbot
