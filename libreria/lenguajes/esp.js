@@ -315,7 +315,7 @@ exports.menunsfw = (prefix) => {
 ║➩ ❍ ${prefix}solog
 ║➩ ❍ ${prefix}feetg
 ║➩ ❍ ${prefix}lewdk
-║➩ ❍ ${prefix}pussy
+║➩ ❍ ${prefix}pussy_jpg
 ║➩ ❍ ${prefix}femdom
 ║➩ ❍ ${prefix}cuddle
 ║➩ ❍ ${prefix}hwaifu
