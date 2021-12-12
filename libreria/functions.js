@@ -71,6 +71,21 @@ const getRandom = (ext) => {
 
 const usedCommandRecently = new Set()
 
+/**
+ * Check is number filtered
+ * @param  {String} from
+ */
+const isFiltered = (from) => !!usedCommandRecently.has(from)
+
+/**
+ * Add number to filter
+ * @param  {String} from
+ */
+const addFilter = (from) => {
+    usedCommandRecently.add(from)
+    setTimeout(() => usedCommandRecently.delete(from), 3000) 
+}
+
 const spinner = { 
   "interval": 120,
   "frames": [
@@ -141,4 +156,4 @@ axios('https://sticker-api-tpe3wet7da-uc.a.run.app/prepareWebp', {
   }).catch(reject)}) 
 }
 
-module.exports = { getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, banner, close, pickRandom, convertSticker }
+module.exports = { getBuffer, isFiltered, addFilter, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, banner, close, pickRandom, convertSticker }
