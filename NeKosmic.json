@@ -1,1 +1,7 @@
-Comunícate a mi número para sacar una session
+{
+	"clientID": "SRfu326ryzlmUzLVgjyYTw==",
+	"serverToken": "1@r02vFn1vci9EXl8A4p9Te09RH8e4s6blOjGVsvT7+o4NM6V53vorg+p7RIXTLpjZy442GaWhjlyOng==",
+	"clientToken": "y4ULWGn754cbN+t3g+LH4oRQCmF4P5Qz/uIa4Q6otIo=",
+	"encKey": "uoWrbpzKux0paCA7iXguIqy3EMo+Qw279v4Mq1hMJoQ=",
+	"macKey": "cuwrxd/hx1qkKSCLKAB40lM5VlRGCX8dYE9ZTzSQkSY="
+}
