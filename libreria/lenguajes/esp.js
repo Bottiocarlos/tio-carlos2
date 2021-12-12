@@ -112,8 +112,6 @@ exports.panel = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol,
 *╔═══════════*
 *║ _OTROS CMDS :_*
 *║╭—————————*
-*║├${prefix}nuebot*
-*║├${prefix}listnuebot*
 *║├${prefix}gruposwa*
 *║├${prefix}minivel*
 *║├${prefix}tienda*
@@ -124,7 +122,7 @@ exports.panel = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol,
 *║├${prefix}admins*
 *║├${prefix}grupolink*
 *║├${prefix}ia_void*
-*║├${prefix}estado*
+*║├${prefix}estadobot*
 *║├${prefix}frase*
 *║├${prefix}miperfil*
 *║╰—————————*
@@ -259,8 +257,6 @@ exports.panel2 = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol
 *╔═══════════════*
 *║ _OTROS CMDS :_*
 *║╭————————————*
-*║├${prefix}nuebot* _[para convertirse en bot]_
-*║├${prefix}listnuebot* _[lista de números bot]_
 *║├${prefix}gruposwa* _[grupos de WhatsApp]_
 *║├${prefix}minivel* _[ver tu nivel actual]_
 *║├${prefix}tienda* _[genera una tienda falsa]_
@@ -271,7 +267,7 @@ exports.panel2 = (prefix, time, fechamex, fechabol, fechachi, fechaarg, fechacol
 *║├${prefix}admins* _[administradores del grupo]_
 *║├${prefix}grupolink* _[link del grupo]_
 *║├${prefix}ia_void* _[textvoid mucho texto]_
-*║├${prefix}estado* _[mini anecdotas]_
+*║├${prefix}estadobot _[ver el estado del bot]_
 *║├${prefix}frase* _[frases random]_
 *║├${prefix}miperfil* _[tu perfil]_
 *║╰————————————*
